@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container-1">
+            <div class="logo">
+                <a href="#">Golf savez BiH</a>
+                
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Novosti</a></li>
+                    <li><a href="#">Golf za sve</a></li>
+                    <li><a href="#">Raspored turnira</a></li>
+                    <li><a href="#">Rezultati</a></li>
+                    <li><a href="#">HCP Centar</a></li>
+                    <li><a href="#">GSBiH</a></li>
+                    <li><a href="#">PGABiH</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+       
+        
+    </section>
+
+    <div class="section-home">
+        <div class="container">
+            <h1 class="myH2">DOBRODOŠLI U GOLF SAVEZ BiH</h1>
+            <p class="myP">Prije tačno 10 godina portal bhgolf počeo je sa radom. Svih ovih godina smo bili na usluzi golferima Bosne i Hercegovine ali i šire. Bezbroj fotografija, članaka, rezultata je pohranjeno u arhivi portala. Te već davne 2010 godine počeli smo pisati članke o golfu, golferima, voditi evidenciju HCP-a za sve golfere BiH na nivou Golf saveza BiH kao jedna od prvih zemalja u Europi koja je uvela evidenciju HDCP-a na državnom nivou.
+                Mnoge veće golf nacije su pokušale da urade slično ali nisu uspjeli. Susjedne države, pa i mnoge Europske zemlje ni dan danas nemaju jasno riješenje evidencije HCP-a na nivou države kakvu imamo mi u Bosni i Hercegovini. Sve to zahvaljujući veoma dobrom konceptu i realizaciji ideje koju su osmislili Jasmin Selmanagić i Dejan Šaran.</p>
+        </div>
+    </div>
+
+    <div class="block-links" id="nav-grid">
+        <div class="blocks">
+            <img src="img/Membership.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">GOLF ZA SVE</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/3.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">RASPORED TURNIRA</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/Membership.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">ŠKOLA GOLFA</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/4.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">REZULTATI</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/skola.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">HCP CENTAR</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/Membership.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">GSBiH</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/3.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">PGABiH</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="blocks">
+            <img src="img/lopta.jpg" alt="#">
+            <a class="a-blocks" href="">
+                <div class="title">
+                    <p class="p-blocks">Golf savez BiH</p>
+                    <h2 class="h2-blocks">GALERIJA</h2>
+                </div>
+            </a>
+        </div>
+
+       
+
+
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>
